@@ -1,0 +1,85 @@
+install git bash
+=============
+
+RIDHVI@LAPTOP-DHO19R98 MINGW64 ~
+============================
+check file locations where u are
+============================
+$ pwd 
+/c/Users/RIDHVI
+
+RIDHVI@LAPTOP-DHO19R98 MINGW64 ~
+=====================================================================
+mkdir stand for make directory, e.g,: .ssh, we are making .ssh folder
+=====================================================================
+$ mkdir .ssh
+
+RIDHVI@LAPTOP-DHO19R98 MINGW64 ~
+================================================
+now we are in the .ssh folder by tying given cmd
+================================================
+$ cd .ssh
+
+RIDHVI@LAPTOP-DHO19R98 MINGW64 ~/.ssh
+$ pwd (check root file where u are)
+/c/Users/RIDHVI/.ssh
+
+RIDHVI@LAPTOP-DHO19R98 MINGW64 ~/.ssh
+==================================================================================
+cmd for building ssh key, we are not using a password here just hit enter two time
+==================================================================================
+$ ssh-keygen.exe
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/RIDHVI/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/RIDHVI/.ssh/id_rsa
+Your public key has been saved in /c/Users/RIDHVI/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:j/Nyc803SA6J7ys8FGm2ELFJ9Yo8d4yWqL0dVUpQ2o8 RIDHVI@LAPTOP-DHO19R98
+The key's randomart image is:
++---[RSA 3072]----+
+|       ooo..     |
+|      ..o =      |
+|       o...+ .   |
+|      ..o=* =    |
+|       =S*+E..   |
+|      o +*oo .   |
+|     . .=.o +o.  |
+|        +*+..oo..|
+|       . +==.  ..|
++----[SHA256]-----+
+
+RIDHVI@LAPTOP-DHO19R98 MINGW64 ~/.ssh
+========================================
+ls - show listed stuff in this directory
+========================================
+$ ls
+id_rsa  id_rsa.pub
+
+RIDHVI@LAPTOP-DHO19R98 MINGW64 ~/.ssh
+========================
+cat - look into the file
+========================
+$ cat id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDFOgpCpsHaXWzNToMfntfODbgOeQe1+cHgygdgjfYWw6bp6s+ExoP6pwDbs8OUcaa968VM3gdGRp+LQMByvLGWRCqNh1nvB61CfW2DtuJHGpJ+BskH43QD/zQRS4rzHENG5lm8HN9b1btK8wp52vnMM/MZpXr6Jq1qilENAyydKn3F2ckCV3nVRt4A8F9al8cocuBodY/WvsnWB5tqnKGVBxKoHo7M3/q80SY1X2IbYGoERqPLkXm5eNDvmXRdgnWS8RAfmYer3DzKw+U8c6wHQ+6X+WetNszge1HU7Sv0dfrNSBpMKiH/r44WWdvwHljZWU6JnySLqqvRjPfLUi+1GXrPoK9gbWJ95CqfBGss2ZPh1H6q1EAJCMk4LyRc9JeMt48ifRMaCou1k6kUqJr9UWzrQerqtHxbu0ejg10sKsX3Wy6OgZxjnJsar4gUbzT6csEI+uJItOJirZk3tFvyEVAko8t+oanstsRpuOxaU/HyfH64cExPoE9o7tbgjKs= RIDHVI@LAPTOP-DHO19R98
+
+RIDHVI@LAPTOP-DHO19R98 MINGW64 ~/.ssh
+$ cd ..
+
+=================================
+http://johnelder.com/code/git.php
+=================================
+=================================
+
+==============
+Initialize Git
+--------------
+$ git config --global user.name "Your Name"
+$ git config --global user.email "you@youraddress.com"
+$ git config --global push.default matching
+$ git config --global alias.co checkout
+$ git init
+==============
+
+
